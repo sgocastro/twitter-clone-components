@@ -1,9 +1,13 @@
 import React from 'react'
+import TalVezTeGusteCard from '../../components/TalVezTeGusteCard'
+import "./../../styles/global.scss"
+import "./style/index.scss"
+
 
 const App = () => {
     return (
-        <div>
-            <h1>Hello React!</h1>
+        <div className="app-container">
+            <TalVezTeGusteCard />
         </div>
     )
 }

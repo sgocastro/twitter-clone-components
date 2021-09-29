@@ -30,7 +30,7 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/,
                 use: [
-                    'style-loader'
+                    'style-loader',
                     'css-loader',
                     'sass-loader'
                 ]
@@ -41,6 +41,9 @@ module.exports = {
         new HtmlWebPackplugin({
             template: "./public/index.html",
             filename: "./index.html"
+        }),
+        new MiniCssExtractPlugin({
+            filename: "[name].css"
         })
     ],
     devServer: {
